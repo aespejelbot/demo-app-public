@@ -5,6 +5,6 @@ pipelineConfig:
       preBuild:
         steps:
         - container: busybox
-          command: echo
+          command: ls
           args:
-          - "11111111111111111111111111111111111111111111 AWESOME PIPELINE 111111111111111111111111111111111111111111111"
+          - ltrha
