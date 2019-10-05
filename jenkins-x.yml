@@ -1,5 +1,5 @@
+buildPack: python
 pipelineConfig:
-  buildPack: python
   pipelines:
     pullRequest:
       preBuild:
