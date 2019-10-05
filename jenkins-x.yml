@@ -1,1 +1,14 @@
 buildPack: python
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      preBuild:
+        steps:
+        - container: newtmitch/sonar-scanner:3.0.3
+          command: sonar-scanner
+          args:
+          - -Dsonar.host.url=http://34.76.151.88:9000
+            -Dsonar.projectKey=demoapp:test
+            -Dsonar.projectName=demo-app-public
+            -Dsonar.projectBaseDir=$(pwd)
+
