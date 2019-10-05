@@ -1,9 +1,10 @@
-buildPack: python
-pipelines:
-  pullRequest:
-    preBuild:
-      steps:
-      - container: busybox
-        command: echo
-        args:
-        - "11111111111111111111111111111111111111111111 AWESOME PIPELINE 111111111111111111111111111111111111111111111"
+pipelineConfig:
+  buildPack: python
+  pipelines:
+    pullRequest:
+      preBuild:
+        steps:
+        - container: busybox
+          command: echo
+          args:
+          - "11111111111111111111111111111111111111111111 AWESOME PIPELINE 111111111111111111111111111111111111111111111"
