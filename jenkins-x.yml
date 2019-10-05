@@ -7,4 +7,4 @@ pipelineConfig:
         - container: busybox
           command: ls
           args:
-          - ltrha
+          - -ltrha
