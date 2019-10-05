@@ -4,7 +4,11 @@ pipelineConfig:
     pullRequest:
       preBuild:
         steps:
-        - container: busybox
-          command: ls
+        - container: newtmitch/sonar-scanner:3.0.3
+          command: sonar-scanner
           args:
-          - -ltrha
+          - -Dsonar.host.url=http://34.76.151.88:9000
+            -Dsonar.projectKey=demoapp:test
+            -Dsonar.projectName=demo-app-public
+      
+
