@@ -10,5 +10,5 @@ pipelineConfig:
           - -Dsonar.host.url=http://34.76.151.88:9000
             -Dsonar.projectKey=demoapp:test
             -Dsonar.projectName=demo-app-public
-      
+            -Dsonar.projectBaseDir=$(pwd)
 
